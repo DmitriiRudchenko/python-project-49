@@ -1,8 +1,11 @@
+#!/usr/bin/env python3
+
 import random
 import prompt
 
 name = ''
 number_of_answers = 0 
+
 
 def welcome_user():
     global name
@@ -10,7 +13,6 @@ def welcome_user():
     name1 = prompt.string('May I have your name? ')
     print(f'Hello, {name1}!')
     name = name1
-
 
 def even_game():
     global number_of_answers
@@ -41,9 +43,7 @@ def even_game():
         print(f'Congratulations, {name}!')
 
 
-
 def main():
-    welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     even_game()
 
