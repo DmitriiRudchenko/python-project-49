@@ -26,7 +26,7 @@ def game_logic():
     meaning = visible_progression[random_number]
     secret = '..'
     visible_progression[random_number] = secret
-    number_f = visible_progression
+    number_f = ' '.join(map(str, visible_progression))
 
     return [number_f, meaning]
 
