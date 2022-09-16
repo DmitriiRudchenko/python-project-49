@@ -10,7 +10,7 @@ def is_prime(number):
     for numbers in range(2, int(math.sqrt(number)) + 1):
         if (number % numbers) == 0:
             return False
-        return True
+    return True
 
 
 def game_logic():
