@@ -6,7 +6,8 @@ rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_logic():
-    number_f = random.randint(0, 50)
+    end_number = 50
+    number_f = random.randint(0, end_number)
     if number_f % 2 == 0:
         meaning = 'yes'
     else:

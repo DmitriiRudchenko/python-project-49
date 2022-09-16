@@ -1,13 +1,14 @@
 import random
-import sympy
 
+import sympy
 from brain_games.main_logic import all_games_logic
 
 rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def game_logic():
-    number_f = random.randint(0, 50)
+    end_number = 50
+    number_f = random.randint(0, end_number)
     if sympy.isprime(number_f):
         meaning = 'yes'
     else:

@@ -4,7 +4,8 @@
 ### Codeclimate Maintainability :
 <a href="https://codeclimate.com/github/DmitriiRudchenko/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/2bee17be6128432b591f/maintainability" /></a>
 
-# asciinema brain-even :
+# brain-even :
+# Проверка на чётность. Суть игры: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное. 
 <a href="https://asciinema.org/a/m0tgPiOAp0T9VprmvkP8mJVFn" target="_blank"><img src="https://asciinema.org/a/m0tgPiOAp0T9VprmvkP8mJVFn.svg" /></a>
 
 # asciinema brain-calc :

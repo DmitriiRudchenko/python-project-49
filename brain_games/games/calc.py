@@ -6,8 +6,9 @@ rules = 'What is the result of the expression?'
 
 
 def game_logic():
-    first_number = random.randint(0, 50)
-    second_number = random.randint(0, 50)
+    end_number = 50
+    first_number = random.randint(0, end_number)
+    second_number = random.randint(0, end_number)
     operations = random.randint(0, 2)
     if operations == 0:
         number_f = f'{first_number} + {second_number}'

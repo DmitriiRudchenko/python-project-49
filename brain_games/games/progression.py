@@ -6,25 +6,27 @@ rules = 'What number is missing in the progression?'
 
 
 def game_logic():
-    first_number = random.randint(0, 200)
-    second_number = random.randint(0, 300)
+    max_first_number = 200
+    max_second_number = 300
+    first_number = random.randint(0, max_first_number)
+    second_number = random.randint(0, max_second_number)
     step = random.randint(1, 10)
 
     if first_number > second_number:
         first_number, second_number = second_number, first_number
 
-    a = list(range(first_number, second_number, step))
+    created_progression = list(range(first_number, second_number, step))
 
-    if len(a) < 5:
+    if len(created_progression) < 5:
         return game_logic()
 
-    b = a[:10]
-    b_len = len(b)
+    visible_progression = created_progression[:10]
+    b_len = len(visible_progression)
     random_number = random.randint(0, b_len - 1)
-    meaning = b[random_number]
+    meaning = visible_progression[random_number]
     secret = '..'
-    b[random_number] = secret
-    number_f = b
+    visible_progression[random_number] = secret
+    number_f = visible_progression
 
     return [number_f, meaning]
 
