@@ -18,7 +18,9 @@ def win_ending():
 
 
 def lose_ending(answer, meaning):
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{meaning}'.\nLet's try again, {name}!")
+    str1 = f"'{answer}' is wrong answer ;(. Correct answer"
+    str2 = f" was '{meaning}'.\nLet's try again, {name}!"
+    print(str1 + str2)
 
 
 def all_games_logic(rules, game_logic):
