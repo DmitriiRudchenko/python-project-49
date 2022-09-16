@@ -8,9 +8,9 @@ rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def game_logic():
     end_number = 50
-    numb = random.randint(0, end_number)
-    number_f =f'{numb}!'
-    if sympy.isprime(numb):
+    number_f = random.randint(2, end_number)
+
+    if sympy.isprime(number_f):
         meaning = 'yes'
     else:
         meaning = 'no'
