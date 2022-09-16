@@ -1,8 +1,9 @@
 
+
 import prompt
 
 name = ''
-answer = ''
+
 
 def welcome_user():
     global name
@@ -21,34 +22,26 @@ def lose_ending(answer, meaning):
 
 
 def all_games_logic(rules, game_logic):
-    
     welcome_user()
     print(rules)
 
-
-    def ask(number_of_answers = 0):
+    def ask2(number_of_answers=0):
         if number_of_answers > 2:
             return win_ending()
 
         qa = game_logic()
         question = qa[0]
-        correct_answer =qa[1]
+        correct_answer = qa[1]
 
         print(f'Qestion: {question}')
         answer = prompt.string('Your answer: ')
-    
-        if answer != correct_answer:
+
+        if str(answer) != str(correct_answer):
             return lose_ending(answer, correct_answer)
-    
+
         print('Correct!')
         number_of_answers += 1
 
-        ask(number_of_answers)
-    
-    ask()
-        
+        ask2(number_of_answers)
 
-    
-
-
-
+    ask2()

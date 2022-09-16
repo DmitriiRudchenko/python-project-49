@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.games.calc import export_func
+from brain_games.games.gcd import export_func
 
 
 def main():

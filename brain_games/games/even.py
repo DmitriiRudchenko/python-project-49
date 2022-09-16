@@ -1,9 +1,8 @@
-from brain_games.main_logic import all_games_logic
-
 import random
 
+from brain_games.main_logic import all_games_logic
 
-rules = 'What is the result of the expression?'
+rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_logic():
