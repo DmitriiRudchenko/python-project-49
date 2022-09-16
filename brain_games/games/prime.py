@@ -6,12 +6,11 @@ from brain_games.main_logic import all_games_logic
 rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-
-def is_prime(n):
-  for i in range(2,int(math.sqrt(n))+1):
-    if (n%i) == 0:
-      return False
-  return True
+def is_prime(number):
+    for numbers in range(2, int(math.sqrt(number)) + 1):
+        if (number % numbers) == 0:
+            return False
+        return True
 
 
 def game_logic():
