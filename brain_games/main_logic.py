@@ -33,7 +33,7 @@ def all_games_logic(rules, game_logic):
         question = qa[0]
         correct_answer = qa[1]
 
-        print(f'Qestion: {question}')
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
 
         if str(answer) != str(correct_answer):
